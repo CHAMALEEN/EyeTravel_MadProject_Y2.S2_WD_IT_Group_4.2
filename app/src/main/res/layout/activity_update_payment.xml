@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".user.BookGuideActivity">
+    tools:context=".user.UpdatePaymentActivity">
 
     <LinearLayout
         android:layout_width="355dp"
@@ -31,11 +31,11 @@
             android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Payment Details"
+            android:text="Update Payment Details"
             android:textSize="16sp" />
 
         <EditText
-            android:id="@+id/txt_book_guideIdMain"
+            android:id="@+id/txt_book_guideId"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -43,7 +43,7 @@
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/txt_book_guideNameMain"
+            android:id="@+id/txt_book_guideName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -51,7 +51,7 @@
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/txt_book_firstNameMain"
+            android:id="@+id/txt_book_firstName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -59,7 +59,7 @@
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/txt_book_lastNameMain"
+            android:id="@+id/txt_book_lastName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -67,7 +67,7 @@
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/txt_book_emailMain"
+            android:id="@+id/txt_book_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -75,7 +75,7 @@
             android:inputType="textEmailAddress" />
 
         <EditText
-            android:id="@+id/txt_book_contactNumberMain"
+            android:id="@+id/txt_book_contactNumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -83,7 +83,7 @@
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/txt_book_AddressMain"
+            android:id="@+id/txt_book_Address"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -91,7 +91,7 @@
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/txt_book_placesToVisitMain"
+            android:id="@+id/txt_book_placesToVisit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -99,7 +99,7 @@
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/txt_book_amountMain"
+            android:id="@+id/txt_book_amount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -107,12 +107,13 @@
             android:inputType="numberDecimal" />
 
         <Button
-            android:id="@+id/btn_book_guideView"
+            android:id="@+id/btn_proceed_to_pay"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#2196F3"
-            android:text="View"
-            app:icon="@drawable/ic_baseline_visibility_24" />
+            android:text="Update and Proceed to Pay"
+            app:icon="@drawable/ic_baseline_attach_money_24" />
 
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

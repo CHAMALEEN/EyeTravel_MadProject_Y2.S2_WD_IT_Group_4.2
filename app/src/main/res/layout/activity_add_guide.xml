@@ -3,53 +3,39 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".admin.AddGuideActivity">
 
     <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="350dp"
-        android:layout_height="363dp"
+        android:id="@+id/linearLayout6"
+        android:layout_width="377dp"
+        android:layout_height="420dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="16dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.923">
+        app:layout_constraintTop_toBottomOf="@+id/imageView4">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Sign Up to Eye Travel"
-            android:textSize="20sp" />
+            android:text="Add Guide"
+            android:textSize="24sp" />
 
         <EditText
-            android:id="@+id/register_fName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="First Name"
-            android:inputType="textPersonName" />
-
-        <EditText
-            android:id="@+id/register_lName"
+            android:id="@+id/admin_add_guideName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Last Name"
+            android:hint="Guide Name"
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/register_country"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Country"
-            android:inputType="textPersonName" />
-
-        <EditText
-            android:id="@+id/register_email"
+            android:id="@+id/admin_add_guideEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -57,41 +43,56 @@
             android:inputType="textEmailAddress" />
 
         <EditText
-            android:id="@+id/register_password"
+            android:id="@+id/admin_add_guidePhone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Password"
-            android:inputType="textPassword" />
+            android:hint="Phone Number"
+            android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/register_confirmPassword"
+            android:id="@+id/admin_add_guideAge"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Re-enter password"
-            android:inputType="textPassword" />
+            android:hint="Age"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/admin_add_guideImageUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Image Url"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/admin_add_guideDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Additional Details"
+            android:inputType="textPersonName" />
 
         <Button
-            android:id="@+id/btn_signup"
+            android:id="@+id/btn_admin_addGuide"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#2196F3"
-            android:text="Sign Up" />
+            android:text="Add Guide"
+            app:icon="@drawable/ic_baseline_person_add_alt_1_24" />
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="254dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="75dp"
-        android:layout_marginEnd="18dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        android:id="@+id/imageView4"
+        android:layout_width="489dp"
+        android:layout_height="291dp"
+        android:layout_marginBottom="111dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@drawable/add_guide"
+        tools:ignore="MissingConstraints" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

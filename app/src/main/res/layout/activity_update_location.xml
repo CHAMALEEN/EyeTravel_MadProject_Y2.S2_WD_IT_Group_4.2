@@ -4,89 +4,78 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".user.UserProfileActivity">
+    tools:context=".admin.UpdateLocationActivity">
 
     <LinearLayout
-        android:id="@+id/linearLayout10"
+        android:id="@+id/linearLayout5"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="34dp"
-        android:layout_marginTop="51dp"
-        android:layout_marginEnd="34dp"
-        android:layout_marginBottom="51dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="16dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="match_parent"
-            android:layout_height="252dp"
-            app:srcCompat="@drawable/profile" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView4">
 
         <TextView
-            android:id="@+id/textView17"
+            android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Profile"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:text="Update Location"
+            android:textSize="24sp" />
 
         <EditText
-            android:id="@+id/profile_fName"
+            android:id="@+id/admin_update_placeName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="First Name"
+            android:hint="Place Name"
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/profile_lName"
+            android:id="@+id/admin_update_location"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Last Name"
+            android:hint="Location"
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/profile_email"
+            android:id="@+id/admin_update_locationDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Email"
+            android:hint="Description"
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/profile_country"
+            android:id="@+id/admin_update_locationImageUrl"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Country"
+            android:hint="Image URL"
             android:inputType="textPersonName" />
-
-        <EditText
-            android:id="@+id/profile_password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Password"
-            android:inputType="textPassword" />
 
         <Button
-            android:id="@+id/btn_user_update_details"
+            android:id="@+id/btn_admin_updateLocation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#2196F3"
-            android:text="Update Details" />
-
-        <Button
-            android:id="@+id/btn_user_logout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#437290"
-            android:text="Logout" />
-
+            android:text="Update Location"
+            app:icon="@drawable/ic_baseline_location_on_24" />
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="437dp"
+        android:layout_height="245dp"
+        android:layout_marginBottom="111dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/add_location" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
