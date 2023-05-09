@@ -4,89 +4,82 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".user.UserProfileActivity">
+    tools:context=".user.ViewCardDetailsActivity">
 
     <LinearLayout
-        android:id="@+id/linearLayout10"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="34dp"
-        android:layout_marginTop="51dp"
-        android:layout_marginEnd="34dp"
-        android:layout_marginBottom="51dp"
+        android:id="@+id/linearLayout12"
+        android:layout_width="313dp"
+        android:layout_height="407dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="75dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="match_parent"
-            android:layout_height="252dp"
-            app:srcCompat="@drawable/profile" />
-
         <TextView
-            android:id="@+id/textView17"
+            android:id="@+id/textView13"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Profile"
+            android:text="Card Details"
             android:textSize="24sp"
             android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/profile_fName"
+        <TextView
+            android:id="@+id/textView14"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="First Name"
-            android:inputType="textPersonName" />
+            android:text="View Card Details"
+            android:textSize="16sp" />
 
         <EditText
-            android:id="@+id/profile_lName"
+            android:id="@+id/view_card_number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Last Name"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:text="Card Number" />
 
         <EditText
-            android:id="@+id/profile_email"
+            android:id="@+id/view_card_expiry_date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Email"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:text="Expiry Date" />
 
         <EditText
-            android:id="@+id/profile_country"
+            android:id="@+id/view_card_code"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Country"
-            android:inputType="textPersonName" />
-
-        <EditText
-            android:id="@+id/profile_password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Password"
-            android:inputType="textPassword" />
+            android:inputType="textPersonName"
+            android:text="CVC/CVV" />
 
         <Button
-            android:id="@+id/btn_user_update_details"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#2196F3"
-            android:text="Update Details" />
-
-        <Button
-            android:id="@+id/btn_user_logout"
+            android:id="@+id/view_card_edit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#437290"
-            android:text="Logout" />
+            android:text="Edit" />
 
+        <Button
+            android:id="@+id/view_card_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF0000"
+            android:text="Delete Card"
+            app:icon="@drawable/ic_baseline_delete_forever_24" />
+
+        <Button
+            android:id="@+id/view_card_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2196F3"
+            android:text="Make Payment"
+            app:icon="@drawable/ic_baseline_attach_money_24" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
